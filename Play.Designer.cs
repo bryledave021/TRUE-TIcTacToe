@@ -40,6 +40,8 @@ namespace TicTacToeGame
             this.Zone1 = new System.Windows.Forms.Label();
             this.btn_Replay = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_turn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Zone7
@@ -170,11 +172,33 @@ namespace TicTacToeGame
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(223, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Turn:";
+            // 
+            // lbl_turn
+            // 
+            this.lbl_turn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_turn.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_turn.Location = new System.Drawing.Point(223, 75);
+            this.lbl_turn.Name = "lbl_turn";
+            this.lbl_turn.Size = new System.Drawing.Size(47, 43);
+            this.lbl_turn.TabIndex = 13;
+            this.lbl_turn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(204, 256);
+            this.ClientSize = new System.Drawing.Size(289, 256);
+            this.Controls.Add(this.lbl_turn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_Replay);
             this.Controls.Add(this.Zone3);
@@ -189,6 +213,7 @@ namespace TicTacToeGame
             this.Name = "Play";
             this.Text = "Play";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -205,5 +230,7 @@ namespace TicTacToeGame
         private System.Windows.Forms.Label Zone1;
         private System.Windows.Forms.Button btn_Replay;
         private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_turn;
     }
 }

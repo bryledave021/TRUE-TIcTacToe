@@ -27,6 +27,9 @@ namespace TicTacToeGame
 
                 Zone1.Text = "X";
                 Occupied = false;
+                Zone1.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -34,8 +37,41 @@ namespace TicTacToeGame
 
                 Zone1.Text = "O";
                 Occupied = true;
+                Zone1.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
 
+            //Winning Coniditons
+            //Horizontal
+            if (Zone1.Text == "O" && Zone2.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone2.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Diagonal
+            if(Zone1.Text == "O" && Zone5.Text == "O" && Zone9.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone5.Text == "X" && Zone9.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Vertical
+            if(Zone1.Text == "O" && Zone4.Text == "O" && Zone7.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone4.Text == "X" && Zone7.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
 
         }
 
@@ -68,6 +104,9 @@ namespace TicTacToeGame
 
                 Zone2.Text = "X";
                 Occupied = false;
+                Zone2.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -75,6 +114,27 @@ namespace TicTacToeGame
 
                 Zone2.Text = "O";
                 Occupied = true;
+                Zone2.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
+            }
+            //Tic tac toe winning conditions
+            //Horizontal
+            if (Zone1.Text == "O" && Zone2.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone2.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+            //Vertical
+            if (Zone2.Text == "O" && Zone5.Text == "O" && Zone8.Text == "O") {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone2.Text == "X" && Zone5.Text == "X" && Zone8.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
             }
         }
 
@@ -85,6 +145,9 @@ namespace TicTacToeGame
 
                 Zone3.Text = "X";
                 Occupied = false;
+                Zone3.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -92,7 +155,42 @@ namespace TicTacToeGame
 
                 Zone3.Text = "O";
                 Occupied = true;
+                Zone3.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
+
+            //Winning Conditions
+            //Horizontal
+            if (Zone1.Text == "O" && Zone2.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone2.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Diagonal
+            if (Zone5.Text == "O" && Zone7.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone5.Text == "X" && Zone7.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Vertical
+            if (Zone6.Text == "O" && Zone9.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone6.Text == "X" && Zone9.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+            
         }
 
         private void Zone4_Click(object sender, EventArgs e)
@@ -102,6 +200,9 @@ namespace TicTacToeGame
 
                 Zone4.Text = "X";
                 Occupied = false;
+                Zone4.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -109,6 +210,30 @@ namespace TicTacToeGame
 
                 Zone4.Text = "O";
                 Occupied = true;
+                Zone4.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
+            }
+
+            //winning condtions
+            //Vertical
+            if (Zone1.Text == "O" && Zone4.Text == "O" && Zone7.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone4.Text == "X" && Zone7.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //horizontal
+            if (Zone5.Text == "O" && Zone4.Text == "O" && Zone6.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone5.Text == "X" && Zone4.Text == "X" && Zone6.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
             }
         }
 
@@ -119,6 +244,9 @@ namespace TicTacToeGame
 
                 Zone5.Text = "X";
                 Occupied = false;
+                Zone5.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -126,7 +254,52 @@ namespace TicTacToeGame
 
                 Zone5.Text = "O";
                 Occupied = true;
+                Zone5.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
+
+            //Winning Conditions
+            //Vertical
+            if (Zone2.Text == "O" && Zone5.Text == "O" && Zone8.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone2.Text == "X" && Zone5.Text == "X" && Zone8.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Diagonal 1
+            if (Zone1.Text == "O" && Zone5.Text == "O" && Zone9.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone5.Text == "X" && Zone9.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //Diagonal 2
+            if (Zone5.Text == "O" && Zone7.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone5.Text == "X" && Zone7.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //horizontal
+            if (Zone5.Text == "O" && Zone4.Text == "O" && Zone6.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone5.Text == "X" && Zone4.Text == "X" && Zone6.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
         }
 
         private void Zone6_Click(object sender, EventArgs e)
@@ -136,6 +309,9 @@ namespace TicTacToeGame
 
                 Zone6.Text = "X";
                 Occupied = false;
+                Zone6.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
 
             }
             else
@@ -143,7 +319,32 @@ namespace TicTacToeGame
 
                 Zone6.Text = "O";
                 Occupied = true;
+                Zone6.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
+
+            //winning conditions
+            //Vertical
+            if (Zone6.Text == "O" && Zone9.Text == "O" && Zone3.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone6.Text == "X" && Zone9.Text == "X" && Zone3.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+
+            //horizontal
+            if (Zone5.Text == "O" && Zone4.Text == "O" && Zone6.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone5.Text == "X" && Zone4.Text == "X" && Zone6.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+           
         }
 
         private void Zone7_Click(object sender, EventArgs e)
@@ -153,30 +354,99 @@ namespace TicTacToeGame
 
                 Zone7.Text = "X";
                 Occupied = false;
-
+                Zone7.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
             }
             else
             {
 
                 Zone7.Text = "O";
                 Occupied = true;
+                Zone7.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
+
+            //winning condtions
+            //Vertical
+            if (Zone1.Text == "O" && Zone4.Text == "O" && Zone7.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone1.Text == "X" && Zone4.Text == "X" && Zone7.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+            else
+            {//Diagonal
+                if (Zone5.Text == "O" && Zone7.Text == "O" && Zone3.Text == "O")
+                {
+                    MessageBox.Show("Red Wins!");
+                }
+                if (Zone5.Text == "X" && Zone7.Text == "X" && Zone3.Text == "X")
+                {
+                    MessageBox.Show("Blue Wins!");
+                }
+                else {
+                    //horizontal
+                    if (Zone7.Text == "O" && Zone8.Text == "O" && Zone9.Text == "O")
+                    {
+                        MessageBox.Show("Red Wins!");
+                    }
+                    if (Zone8.Text == "X" && Zone7.Text == "X" && Zone9.Text == "X")
+                    {
+                        MessageBox.Show("Blue Wins!");
+                    }
+                   
+                }
+
+                
+            }
+            
+
         }
 
         private void Zone8_Click(object sender, EventArgs e)
         {
             if (Occupied == true)
             {
-
                 Zone8.Text = "X";
                 Occupied = false;
-
+                Zone8.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
             }
             else
             {
-
                 Zone8.Text = "O";
                 Occupied = true;
+                Zone8.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
+            }
+            //Winning Condtions
+            //Vertical
+            if (Zone2.Text == "O" && Zone5.Text == "O" && Zone8.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            if (Zone2.Text == "X" && Zone5.Text == "X" && Zone8.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+            else
+            {
+                //horizontal
+                if (Zone7.Text == "O" && Zone8.Text == "O" && Zone9.Text == "O")
+                {
+                    MessageBox.Show("Red Wins!");
+                }
+                if (Zone8.Text == "X" && Zone7.Text == "X" && Zone9.Text == "X")
+                {
+                    MessageBox.Show("Blue Wins!");
+                }
+                
             }
         }
 
@@ -187,14 +457,56 @@ namespace TicTacToeGame
 
                 Zone9.Text = "X";
                 Occupied = false;
-
+                Zone9.ForeColor = Color.Blue;
+                lbl_turn.Text = "O";
+                lbl_turn.ForeColor = Color.Red;
             }
             else
             {
 
                 Zone9.Text = "O";
                 Occupied = true;
+                Zone9.ForeColor = Color.Red;
+                lbl_turn.Text = "X";
+                lbl_turn.ForeColor = Color.Blue;
             }
+
+            //Winning Conditions
+            //Diagonal
+            if (Zone1.Text == "O" && Zone5.Text == "O" && Zone9.Text == "O")
+            {
+                MessageBox.Show("Red Wins!");
+            }
+            
+            if (Zone1.Text == "X" && Zone5.Text == "X" && Zone9.Text == "X")
+            {
+                MessageBox.Show("Blue Wins!");
+            }
+            else
+            { //Vertical
+                if (Zone6.Text == "O" && Zone9.Text == "O" && Zone3.Text == "O")
+                {
+                    MessageBox.Show("Red Wins!");
+                }
+                if (Zone6.Text == "X" && Zone9.Text == "X" && Zone3.Text == "X")
+                {
+                    MessageBox.Show("Blue Wins!");
+                }
+                else {
+                    //horizontal
+                    if (Zone7.Text == "O" && Zone8.Text == "O" && Zone9.Text == "O")
+                    {
+                        MessageBox.Show("Red Wins!");
+                    }
+                    if (Zone8.Text == "X" && Zone7.Text == "X" && Zone9.Text == "X")
+                    {
+                        MessageBox.Show("Blue Wins!");
+                    }
+                   
+                }
+                 
+            }
+            
         }
     }
 }
