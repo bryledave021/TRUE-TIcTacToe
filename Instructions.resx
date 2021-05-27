@@ -57,4 +57,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>1 Press the Zone where you want to make a move.
+2. In order to win, you need to form a straight diagonal line, vertical line, or horizontal line.
+3. Press Replay button If Someone Wins or Neither of the, Wins.</value>
+  </data>
 </root>

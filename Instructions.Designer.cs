@@ -29,6 +29,7 @@ namespace TicTacToeGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Instructions));
             this.label1 = new System.Windows.Forms.Label();
             this.label_instructions = new System.Windows.Forms.Label();
             this.btn_play = new System.Windows.Forms.Button();
@@ -40,10 +41,9 @@ namespace TicTacToeGame
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 163);
+            this.label1.Size = new System.Drawing.Size(258, 163);
             this.label1.TabIndex = 0;
-            this.label1.Text = "1 Press the Zone where you want to make a move.\r\n2. In order to win, you need to " +
-    "form a straight diagonal line, vertical line, or horizontal line.\r\n";
+            this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label_instructions
@@ -58,7 +58,7 @@ namespace TicTacToeGame
             // 
             // btn_play
             // 
-            this.btn_play.Location = new System.Drawing.Point(47, 242);
+            this.btn_play.Location = new System.Drawing.Point(105, 248);
             this.btn_play.Name = "btn_play";
             this.btn_play.Size = new System.Drawing.Size(103, 32);
             this.btn_play.TabIndex = 2;
@@ -70,7 +70,8 @@ namespace TicTacToeGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(210, 290);
+            this.ClientSize = new System.Drawing.Size(300, 292);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.label_instructions);
             this.Controls.Add(this.label1);

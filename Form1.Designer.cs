@@ -79,10 +79,12 @@ namespace TicTacToeGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(203, 288);
+            this.ControlBox = false;
             this.Controls.Add(this.lbl_Title);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_Instructions);
             this.Controls.Add(this.btn_Play);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "IntroForm";
